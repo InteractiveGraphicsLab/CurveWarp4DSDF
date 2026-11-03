@@ -1,0 +1,30 @@
+# Data I/O Settings
+data: {input_dir: '.\data\input_data', output_dir: '.\data\output_data', target_id: 1}
+
+# Volume Settings (Optional) : Set to null or omit to match the original number of input frames.
+volume: {num_input_frames: null, num_output_frames: null}
+
+# User-Defined Control Point Curve Constraints for Deformation
+# Format: List of curves -> List of points -> [phys_x, phys_y, phys_z, frame_index]
+curves:
+# Curve Constraints on frame 0
+- - [79.5899, 49.1987, 58.6956, 0]
+  - [76.3878, 59.8646, 58.6956, 0]
+  - [81.1709, 67.2256, 58.6956, 0]
+- - [35.9774, 48.4624, 58.6956, 0]
+  - [41.5903, 58.0993, 58.6956, 0]
+  - [34.0137, 66.9912, 58.6956, 0]
+- - [79.3468, 64.32, 72.9951, 0]
+  - [67.805, 64.32, 88.7584, 0]
+  - [51.1923, 64.32, 89.9609, 0]
+  - [39.6355, 64.32, 81.2662, 0]
+# Curve Constraints on frame 5
+- - [56.5417, 54.656, 38.0611, 5]
+  - [56.5417, 24.3978, 63.2662, 5]
+  - [56.5416, 57.6772, 87.7475, 5]
+- - [67.0833, 49.1388, 42.3236, 5]
+  - [67.0833, 31.6495, 59.1707, 5]
+  - [67.0833, 49.8571, 82.2289, 5]
+- - [46.9584, 52.6601, 40.7316, 5]
+  - [46.9584, 31.3372, 64.92, 5]
+  - [46.9584, 50.1968, 83.2849, 5]
